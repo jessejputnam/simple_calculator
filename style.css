@@ -1,0 +1,93 @@
+body {
+  background-image: linear-gradient(to bottom right, rgb(60, 60, 60), rgb(116, 42, 42));
+}
+
+/* calculator body */
+.calc-body {
+  background: rgb(128, 142, 156);
+  width: 300px;
+  height: 400px;
+  margin: 10vh auto;
+  border: outset silver 8px;
+  border-radius: 2vh;
+  box-shadow: 2px 2px 5px black;
+}
+
+/* display bar */
+.display p {
+  text-align: right;
+  border: ridge white 3px;
+  border-radius: 1vh;
+  padding: 5px 10px;
+  margin: 40px 10px;
+  background: rgb(216, 216, 216);
+  font-size: 18px;
+  color: rgb(75, 75, 75);
+  box-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px rgb(114, 114, 114);
+}
+
+/* button pad spacing within body */
+.buttons {
+  margin: 20px 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around
+}
+
+.row-top {
+  justify-content: right;
+}
+
+.button-top {
+  margin-right: 3px;
+}
+
+/* button visual display */
+.button {
+  border: black 3px solid;
+  height: 45px;
+  width: 57px;
+  line-height: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+  font-size: 20px;
+  border-radius: 1vh;
+  box-shadow: 1px 1px 4px rgb(97, 97, 97);
+  background: rgb(152, 168, 184);
+  cursor: pointer;
+}
+
+.button-operator, .button-negative {
+  font-size: 30px;
+  background: rgb(110, 98, 98);
+}
+
+.button-equals {
+  background-color: green;
+}
+
+.button-clear {
+  font-size: 15px;
+  background: rgb(134, 26, 26);
+  margin-right: 2px;
+}
+
+.button-negative {
+  font-size: 20px;
+  background-color: rgb(109, 109, 180);
+}
+
+/* JS event filters */
+.pressed {
+  filter: brightness(70%);
+  border: white 5px ridge;
+  height: 41px;
+  width: 53px;
+}
