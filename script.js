@@ -55,6 +55,7 @@ for (let i = 0; i < buttonsAll.length; i++) {
 // Storing num inputs
 for (let i = 0; i < buttonsNum.length; i++) {
   buttonsNum[i].addEventListener("click", function() {
+    if (displayInput.length > 26) return; // limit input length
     if (display.innerHTML === "0") { // if current number = 0, replace 0 with number
       displayInput = event.target.innerHTML; // store input in variable
       display.innerHTML = displayInput; // display variable
@@ -68,6 +69,7 @@ for (let i = 0; i < buttonsNum.length; i++) {
 // storing operator inputs
 for (let i = 0; i < buttonsOp.length; i++) {
   buttonsOp[i].addEventListener("click", function() {
+    if (displayInput.length > 26) return; // limit input length
     // include only one operator at a time
     if (displayInput.includes("+") || displayInput.includes("- ") || displayInput.includes("x") || displayInput.includes("/")) return;
 
@@ -96,6 +98,7 @@ buttonNeg.addEventListener("click", function() {
 
 // decimal point button
 buttonDec.addEventListener("click", function() {
+  if (displayInput.length > 26) return; // limit input length
   const arr = displayInput.split(" "); // array to check for decimals
   // if no inputs yet, 0.xxxx
   if (arr[0] === "") { 
