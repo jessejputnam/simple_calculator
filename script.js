@@ -430,7 +430,7 @@ document.addEventListener("keyup", function (x) {
 
 document.addEventListener("keydown", function (x) {
   if (displayInput.length > 25) return;
-  if (x.key === "Shift") {
+  if (x.key === "_") {
     buttonDec.classList.add("pressed");
     if (displayInput.length === 0) {
     displayInput = "-";
@@ -443,7 +443,7 @@ document.addEventListener("keydown", function (x) {
   }
 });
 document.addEventListener("keyup", function (x) {
-  if (x.key === "Shift") {
+  if (x.key === "_") {
     buttonDec.classList.remove("pressed");
   }
 });
