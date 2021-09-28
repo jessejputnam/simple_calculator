@@ -87,7 +87,7 @@ body {
 /* JS event filters */
 .pressed {
   filter: brightness(70%);
-  border: white 5px ridge;
-  height: 41px;
-  width: 53px;
+  border: white 3px inset;
+  height: 44px;
+  width: 56px;
 }
